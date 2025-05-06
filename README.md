@@ -4,24 +4,26 @@ A simple console-based number guessing game implemented in Java.
 
 ## Description
 
-This project is a fun, interactive game where the player attempts to guess a randomly generated number. The program provides feedback after each guess, telling the player if their guess was too high or too low, until they correctly guess the number.
+This project is a fun, interactive game where the player attempts to guess a randomly generated number. The program provides feedback after each guess, telling the player if their guess was too high or too low, until they correctly guess the correct number.
 
 ## Features
 
-- Random number generation
+- Random number generation between 1-100
 - User input validation
-- Guess tracking
-- Feedback on each guess
+- Guess tracking with attempt counter
+- Helpful feedback on each guess
 - Game completion detection
+- Option to play again
 
 ## How to Play
 
 1. Run the program
-2. The game will generate a random number (typically between 1-100)
+2. The game will generate a random number between 1 and 100
 3. Enter your guess when prompted
 4. The game will tell you if your guess is too high or too low
 5. Keep guessing until you find the correct number
 6. The game will display the number of attempts it took you to win
+7. Choose whether you want to play again
 
 ## Requirements
 
@@ -54,20 +56,20 @@ java NumberGuessingGame
 ## Code Structure
 
 The main components of the application include:
-- Random number generation
-- User input handling
-- Game logic for comparing guesses
+- Random number generation using `java.util.Random`
+- User input handling with `java.util.Scanner`
+- Game logic for comparing guesses and providing feedback
 - Loop for continuing the game until the correct number is guessed
+- Play again functionality
 
 ## Future Improvements
 
-- Add difficulty levels (changing the range of possible numbers)
-- Implement a scoring system
+- Add difficulty levels (adjusting the range of possible numbers)
+- Implement a scoring system based on number of attempts
 - Add a graphical user interface (GUI)
 - Include a timer feature
-- Add option for multiple rounds
+- Add option for multiple rounds with cumulative scoring
 
 ## Contributing
 
 Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
-
